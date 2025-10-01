@@ -72,17 +72,17 @@
 
 
 #How to run
-
+<br>
 Task-management 
 <br>
-        **  use your own credentials --> 1. ATLAS_URL --> your url,  2. JWT_SECRET --> your secret
+        **  use your own credentials --> 1. ATLAS_URL --> your url,  2. JWT_SECRET --> your secret<br>
         <br>
-        1. cb backend
-            * npm install
+        1. cb backend<br>
+            * npm install<br>
             * node server.js
-            <br>
-        2. cd frontend 
-             * npm install
+            <br><br>
+        2. cd frontend <br>
+             * npm install<br>
              * npm run dev     
     
 
