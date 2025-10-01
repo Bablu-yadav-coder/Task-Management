@@ -1,33 +1,30 @@
 import Task from "../Models/task.model.js";
 import User from "../Models/user.model.js";
-import { logMessage } from "../looger.js";
+import { logMessage } from "../logger.js";
 
 
 
-    logMessage(`Task created: tete code`);
+logMessage(`Task created: tete code`);
 
+
+
+console.log("sfdwzxdddddddddddddde")
 
 export const createTask = async (req, res) => {
 
 
-    console.log("sfdwe")
 
     try {
 
-        const { title, description } = req.body;
+        const { title, description, userId } = req.body;
 
-        const userId = req.user._id;
+        // const userId = req.user._id;
 
-        
-        console.log("saddddddddddddddddddddddddddddd")
 
         const newTask = new Task({ title, description, userId });
 
 
         await newTask.save();
-
-
-        console.log("saddddddddddddddddddddddddddddd")
 
 
         logMessage(`Task created:............`);
@@ -50,8 +47,10 @@ export const createTask = async (req, res) => {
 
 export const getAllTask = async (req, res) => {
 
+    console.log("find tasks")
 
-        logMessage(`get Task task: `);
+
+    logMessage(`get Task task: `);
 
 
     try {

@@ -1,7 +1,7 @@
 import User from "../Models/user.model.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
-import { logMessage } from "../looger.js";
+import { logMessage } from "../logger.js";
 
 // register new accout 
 

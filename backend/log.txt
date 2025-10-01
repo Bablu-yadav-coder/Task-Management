@@ -1,14 +1,3 @@
 Server started on port 5000
 Task created: Finish Assignment
 Server started on port 5000
-[2025-10-01T08:43:31.585Z] Task created: tete code
-[2025-10-01T08:44:03.959Z] Task created: tete code
-[2025-10-01T08:48:25.731Z] Task created: tete code
-[2025-10-01T08:48:59.859Z] Task created: tete code
-[2025-10-01T08:50:04.048Z] Task created: tete code
-[2025-10-01T08:51:25.994Z] Task created: tete code
-[2025-10-01T08:51:35.453Z] Task created: tete code
-[2025-10-01T08:53:25.347Z] Task created: tete code
-[2025-10-01T08:53:44.410Z] Task created: tete code
-[2025-10-01T08:53:56.889Z] Task created: tete code
-[2025-10-01T08:54:06.053Z] Task created: tete code
