@@ -1,8 +1,16 @@
 import Task from "../Models/task.model.js";
 import User from "../Models/user.model.js";
+import { logMessage } from "../looger.js";
+
+
+
+    logMessage(`Task created: tete code`);
 
 
 export const createTask = async (req, res) => {
+
+
+    console.log("sfdwe")
 
     try {
 
@@ -10,9 +18,20 @@ export const createTask = async (req, res) => {
 
         const userId = req.user._id;
 
+        
+        console.log("saddddddddddddddddddddddddddddd")
+
         const newTask = new Task({ title, description, userId });
 
+
         await newTask.save();
+
+
+        console.log("saddddddddddddddddddddddddddddd")
+
+
+        logMessage(`Task created:............`);
+
 
         res.status(200).json({
             success: true,
@@ -32,9 +51,14 @@ export const createTask = async (req, res) => {
 export const getAllTask = async (req, res) => {
 
 
+        logMessage(`get Task task: `);
+
+
     try {
 
         const getAlltasks = await Task.find();
+
+        logMessage(`Task fetched`);
 
         return res.status(200).json({
             success: true,
@@ -99,6 +123,8 @@ export const deleteTask = async (req, res) => {
 
         }
 
+        logMessage(`Task deleted: ${deleteTask.title}`);
+
         return res.status(200).json({ success: true, deleteTask, message: "task deleted successfully" })
 
 
@@ -149,10 +175,10 @@ export const updateTask = async (req, res) => {
     try {
         const { title, userId, description, id } = req.body;
 
-    
-        const task = await Task.findOne({_id : id})
 
-        
+        const task = await Task.findOne({ _id: id })
+
+
 
         if (!task) {
             return res.status(404).json({ success: false, message: "Task not found" });
@@ -165,13 +191,15 @@ export const updateTask = async (req, res) => {
         if (userId.toString() === task.userId.toString()) {
 
             updatedTask = await Task.findOneAndUpdate(
-                {_id : req.body.id},
+                { _id: req.body.id },
 
-                { title , description },
+                { title, description },
                 { new: true, runValidators: true }
             );
 
-            
+
+            logMessage(`Task updated: ${updatedTask.title}`);
+
 
         } else {
             return res.status(404).json({ success: false, message: "unauthorized" });

@@ -1,7 +1,7 @@
 import User from "../Models/user.model.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
-
+import { logMessage } from "../looger.js";
 
 // register new accout 
 
@@ -37,6 +37,9 @@ export const register = async (req, res) => {
 
         newUser.token = token;
 
+        logMessage(`New user registerd: ${newUser.name}`);
+
+
         await newUser.save();
 
         res.status(201).json({
@@ -70,6 +73,8 @@ export const loginUser = async (req, res) => {
         if (!isMatch) return res.status(400).json({ message: "Invalid credentials" });
 
         const token = generateToken(user._id);
+
+        logMessage(` user logined: ${user.name}`);
 
 
         user.token = token;
