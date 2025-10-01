@@ -3,15 +3,7 @@ import User from "../Models/user.model.js";
 import { logMessage } from "../logger.js";
 
 
-
-logMessage(`Task created: tete code`);
-
-
-
-console.log("sfdwzxdddddddddddddde")
-
 export const createTask = async (req, res) => {
-
 
 
     try {
@@ -26,11 +18,10 @@ export const createTask = async (req, res) => {
 
         await newTask.save();
 
+        logMessage(`New task created:............`);
 
-        logMessage(`Task created:............`);
 
-
-        res.status(200).json({
+        return res.status(200).json({
             success: true,
             message: "Task created successfully",
             data: newTask,
@@ -47,17 +38,16 @@ export const createTask = async (req, res) => {
 
 export const getAllTask = async (req, res) => {
 
-    console.log("find tasks")
-
-
-    logMessage(`get Task task: `);
-
+   
 
     try {
 
         const getAlltasks = await Task.find();
 
-        logMessage(`Task fetched`);
+       logMessage('Task Fetched from : DB')
+
+
+   
 
         return res.status(200).json({
             success: true,
@@ -152,6 +142,7 @@ export const deleteTaskByAuther = async (req, res) => {
 
 
         }
+        
 
         return res.status(200).json({ success: true, deleteTask, message: "task deleted successfully" })
 
@@ -172,11 +163,14 @@ export const deleteTaskByAuther = async (req, res) => {
 
 export const updateTask = async (req, res) => {
     try {
-        const { title, userId, description, id } = req.body;
+        const { title,userId,  description, id } = req.body;
 
 
         const task = await Task.findOne({ _id: id })
+        console.log(task)
 
+        console.log(userId)
+        console.log(task.userId)
 
 
         if (!task) {

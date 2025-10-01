@@ -1,3 +1,51 @@
-Server started on port 5000
-Task created: Finish Assignment
-Server started on port 5000
+[2025-10-01T11:03:08.217Z] 🚀 Server started on port 8000
+[2025-10-01T11:03:14.294Z] Task Fetched from : DB
+[2025-10-01T11:04:34.458Z] Task Fetched from : DB
+[2025-10-01T11:04:40.928Z] Task updated: DEVELOPEMENT
+[2025-10-01T11:04:41.062Z] Task Fetched from : DB
+[2025-10-01T11:04:55.482Z] Task deleted: sdas
+[2025-10-01T11:04:55.611Z] Task Fetched from : DB
+[2025-10-01T11:05:16.954Z] Task created:............
+[2025-10-01T11:05:17.116Z] Task Fetched from : DB
+[2025-10-01T11:05:40.006Z] 🚀 Server started on port 8000
+[2025-10-01T11:05:56.902Z] 🚀 Server started on port 8000
+[2025-10-01T11:06:02.044Z] 🚀 Server started on port 8000
+[2025-10-01T11:07:42.445Z] 🚀 Server started on port 8000
+[2025-10-01T11:08:16.409Z] Task updated: DEVELOPEMENT!
+[2025-10-01T11:08:16.605Z] Task Fetched from : DB
+[2025-10-01T11:09:30.831Z] New task created:............
+[2025-10-01T11:09:30.950Z] Task Fetched from : DB
+[2025-10-01T11:09:40.569Z] New task created:............
+[2025-10-01T11:09:40.685Z] Task Fetched from : DB
+[2025-10-01T11:09:45.889Z] New task created:............
+[2025-10-01T11:09:46.008Z] Task Fetched from : DB
+[2025-10-01T11:09:57.118Z] New task created:............
+[2025-10-01T11:09:57.233Z] Task Fetched from : DB
+[2025-10-01T11:11:20.218Z] 🚀 Server started on port 8000
+[2025-10-01T11:11:22.558Z] 🚀 Server started on port 8000
+[2025-10-01T11:13:04.935Z] 🚀 Server started on port 8000
+[2025-10-01T11:13:28.181Z] 🚀 Server started on port 8000
+[2025-10-01T11:14:23.337Z] 🚀 Server started on port 8000
+[2025-10-01T11:17:50.751Z] Task Fetched from : DB
+[2025-10-01T11:17:53.856Z] Task deleted: WAlk , excercise
+[2025-10-01T11:17:54.011Z] Task Fetched from : DB
+[2025-10-01T11:17:55.760Z] Task deleted: Eat
+[2025-10-01T11:17:55.918Z] Task Fetched from : DB
+[2025-10-01T11:17:59.568Z] Task deleted: Code
+[2025-10-01T11:17:59.888Z] Task Fetched from : DB
+[2025-10-01T11:18:03.008Z] Task deleted: Sleep
+[2025-10-01T11:18:03.137Z] Task Fetched from : DB
+[2025-10-01T11:18:05.837Z] Task deleted: sddddddddddddddd
+[2025-10-01T11:18:05.977Z] Task Fetched from : DB
+[2025-10-01T11:18:09.289Z] Task deleted: Coding 
+[2025-10-01T11:18:09.389Z] Task Fetched from : DB
+[2025-10-01T11:18:12.792Z] Task deleted: dfd
+[2025-10-01T11:18:12.938Z] Task Fetched from : DB
+[2025-10-01T11:18:15.283Z] Task deleted: sdddddddddddd
+[2025-10-01T11:18:15.416Z] Task Fetched from : DB
+[2025-10-01T11:18:17.840Z] Task deleted: asdaaedw
+[2025-10-01T11:18:17.947Z] Task Fetched from : DB
+[2025-10-01T11:19:08.119Z] Task Fetched from : DB
+[2025-10-01T11:19:19.430Z] New task created:............
+[2025-10-01T11:19:19.598Z] Task Fetched from : DB
+[2025-10-01T11:19:37.774Z] Task Fetched from : DB

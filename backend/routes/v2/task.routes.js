@@ -12,7 +12,13 @@ const router = Router();
 
 
 
-router.route("/create").post(isLoggedIn, createTask);
+router.route("/create").post(isLoggedIn, (req,res, next) => {
+            console.log("crated..............");
+
+            next();
+} , createTask);
+
+
 router.route("/get_all_Task").get(getAllTask);
 router.route("/get_task").post(getTask);
 
