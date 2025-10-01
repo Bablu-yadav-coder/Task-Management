@@ -74,11 +74,13 @@
 #How to run
 
 Task-management 
+<br>
         **  use your own credentials --> 1. ATLAS_URL --> your url,  2. JWT_SECRET --> your secret
-        *
+        <br>
         1. cb backend
             * npm install
             * node server.js
+            <br>
         2. cd frontend 
              * npm install
              * npm run dev     
